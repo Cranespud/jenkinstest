@@ -13,7 +13,7 @@ stages{
             post {
                 success {
                     echo 'Now Archiving...'
-	            sh "echo '<?php phpinfo(); ?>' >> holamundo.php'"
+	            sh "echo '<?php phpinfo(); ?>' >> holamundo.php"
                     archiveArtifacts artifacts: '**/*.php'
                 }
             }
